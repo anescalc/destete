@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="A. Baluja" />
+  <title>Destete respiratorio</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="css/extra.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="index_files/htmlwidgets-1.0/htmlwidgets.js"></script>
+    <script src="index_files/d3-3.3.8/d3.min.js"></script>
+    <script src="index_files/dagre-0.4.0/dagre-d3.min.js"></script>
+    <link href="index_files/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+    <script src="index_files/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+    <link href="index_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="index_files/chromatography-0.1/chromatography.js"></script>
+    <script src="index_files/DiagrammeR-binding-1.0.0/DiagrammeR.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+  <html>
+    <div class="bottombar">
+      <h1 class="title"></h1><image class="logo" src="./img/Rplot2.png" style="position: absolute;right:48px;top:15px; width:80px; height:80px;">
+    </div>
+  </html>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Destete respiratorio</h1>
+    <h2 class="author">A. Baluja</h2>
+    <h3 class="date">16 abril, 2018</h3>
+</section>
+
+<section id="diapositivas" class="slide level2">
+<h2>Diapositivas  <span class="fa fa-cloud-download" style="color:white;"></span></h2>
+<div class="alert alert-info">
+<h2>
+<a href="https://anescalc.github.io/destete"><code>anescalc.github.io/destete</code></a>
+</h2>
+</div>
+</section>
+<section id="resumen" class="slide level2">
+<h2>Resumen:</h2>
+<p><br></p>
+<div class="alert alert-info">
+<ul>
+<li><p>Conceptos básicos</p></li>
+<li><p>Evidencia disponible</p></li>
+</ul>
+</div>
+</section>
+<section id="esquema-general-destete" class="slide level2">
+<h2>Esquema general destete</h2>
+<div id="htmlwidget-5d1b3257bc788476c71c" style="width:960px;height:672px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5d1b3257bc788476c71c">{"x":{"diagram":"graph TB;\n    A(Se puede iniciar test RE?)-->B1{S&iacute;};\n    A-->B2{No};\n    B1-->C1(RE 30 minutos);\n    C1-->D1[Exito];\n    C1-->D2[Fracaso];\n    D2-->V[Reiniciar VM];\n    D1-->E[Criterios HD, RESP, NRL...];\n    E-->F1>Cumple criterios];\n    E-->F2>No cumple criterios];\n    F1-->G[Extubar];\n    F2-->V;"},"evals":[],"jsHooks":[]}</script>
+</section>
+<section id="esquema-general-destete-1" class="slide level2">
+<h2>Esquema general destete</h2>
+<div id="htmlwidget-ed680df6edba024b67a6" style="width:960px;height:672px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ed680df6edba024b67a6">{"x":{"diagram":"graph TB;\n    A(Se puede iniciar test RE?)-->B1{S&iacute;};\n    A-->B2{No};\n    B1-->C1(RE 30 minutos);\n    C1-->D1[Exito];\n    C1-->D2[Fracaso];\n    D2-->V[Reiniciar VM];\n    D1-->E[Criterios HD, RESP, NRL...];\n    E-->F1>Cumple criterios];\n    E-->F2>No cumple criterios];\n    F1-->G[Extubar];\n    F2-->V;\n    style E fill:#E5E25F;"},"evals":[],"jsHooks":[]}</script>
+</section>
+<section id="criterios-neuromuscular" class="slide level2">
+<h2>Criterios: neuromuscular</h2>
+<p><br></p>
+<ul>
+<li><p>Sedación</p></li>
+<li><p>Nivel NRL previo:</p>
+<ul>
+<li><p>SNC</p></li>
+<li><p>SN periférico</p></li>
+<li><p>Musculatura</p></li>
+<li><p>RPVA: SNC + músculo</p></li>
+</ul></li>
+<li><p>Riesgo/beneficio:</p>
+<ul>
+<li><p>riesgo: deterioro NRL</p></li>
+<li><p>beneficio: vigilancia NRL óptima</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="criterios-respiratorio" class="slide level2">
+<h2>Criterios: respiratorio</h2>
+<p><br></p>
+<ul>
+<li><p>Oxigenación:</p>
+<ul>
+<li><p>PaO2 / FiO2</p></li>
+<li><p>Niveles basales</p></li>
+<li><p>Reserva</p></li>
+</ul></li>
+<li><p>Mecánica:</p>
+<ul>
+<li><p>Factor estructural pulmonar</p></li>
+<li><p>Factor extrapulmonar</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="criterios-hemodinamico" class="slide level2">
+<h2>Criterios: hemodinámico</h2>
+<p><br></p>
+<ul>
+<li><p>Estabilidad</p></li>
+<li><p>Sangrado</p></li>
+<li><p>Consumo de O2</p></li>
+</ul>
+<p>Otros:</p>
+<ul>
+<li>Procedimientos dolorosos…</li>
+</ul>
+</section>
+<section id="conclusion-oferta-reserva-demanda" class="slide level2" data-transition="fade-out">
+<h2>Conclusión: <br> Oferta / Reserva / Demanda</h2>
+<div class="img-center">
+<p><img class="plain" style="width:800px;" src="./img/vumeter.jpg"></p>
+</div>
+</section>
+<section id="conclusion-oferta-reserva-demanda-1" class="slide level2" data-transition="fade-in slide-out">
+<h2>Conclusión: <br> Oferta / Reserva / Demanda</h2>
+<p><br></p>
+<div class="alert alert-warning">
+<p><span class="math display">\[Oferta + Reserva - Demanda \geq 0\]</span></p>
+</div>
+</section>
+<section id="evidencia-disponible" class="slide level2">
+<h2>Evidencia disponible</h2>
+<div class="img-center">
+<p><img class="plain" style="width:900px;" src="./img/quirofano1.jpg"></p>
+</div>
+</section>
+<section id="niveles-evidencia" class="slide level2">
+<h2>Niveles evidencia</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Nivel</th>
+<th style="text-align: left;">La evidencia científica procede de…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ia</td>
+<td style="text-align: left;">Metanálisis de ensayos clínicos aleatorizados</td>
+</tr>
+<tr class="even">
+<td>Ib</td>
+<td style="text-align: left;">Al menos de un ensayo clínico aleatorizado</td>
+</tr>
+<tr class="odd">
+<td>IIa</td>
+<td style="text-align: left;">Al menos de un estudio prospectivo controlado bien diseñado sin aleatorizar</td>
+</tr>
+<tr class="even">
+<td>IIb</td>
+<td style="text-align: left;">Al menos de un estudio casi experimental bien diseñado</td>
+</tr>
+<tr class="odd">
+<td>III</td>
+<td style="text-align: left;">Estudios observacionales bien diseñados, como estudios comparativos, estudios de correlación o estudios de casos y controles</td>
+</tr>
+<tr class="even">
+<td>IV</td>
+<td style="text-align: left;">Documentos u opiniones de comités de expertos y/o experiencias clínicas de autoridades de prestigio</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="grados-recomendacion" class="slide level2">
+<h2>Grados recomendación</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Grado Recomendación</th>
+<th style="text-align: center;">Requiere…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A (EC Ia, Ib)</td>
+<td style="text-align: center;">Al menos un ensayo clínico aleatorizado como parte de un conjunto de evidencia científica globalmente de buena calidad y consistencia con relación a la recomendación específica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B (EC IIa, IIb, III)</td>
+<td style="text-align: center;">Disponer de estudios clínicos metodológicamente correctos que no sean ensayos clínicos aleatorizados sobre el tema de la recomendación. Incluye estudios que no cumplan los criterios ni de A ni de C</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C (Nivel EC IV)</td>
+<td style="text-align: center;">Disponer de documentos u opiniones de comités de expertos y/o experiencias clínicas de autoridades reconocidas. Indica la ausencia de estudios clínicos directamente aplicables y de alta calidad</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="guias-2001" class="slide level2">
+<h2>Guías 2001</h2>
+<p><br></p>
+<div class="img-center">
+<p><a href="https://anescalc.github.io/destete/docs/evidence-chest-2001.pdf" target="blank"><img style="width:800px;" src="./img/evidence-chest-2001.png"></a></p>
+</div>
+</section>
+<section id="fracaso" class="slide level2">
+<h2>Fracaso?</h2>
+</section>
+<section id="fracaso-15" class="slide level2">
+<h2>Fracaso: 15%</h2>
+</section>
+<section id="fracaso-15-1" class="slide level2">
+<h2>Fracaso: 15%</h2>
+<ul>
+<li>VMNI</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="index_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="index_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "index_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
